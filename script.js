@@ -49,7 +49,7 @@ function menuExpand(menu){
 }
 
 function mobileMenuExpand(menu){
-    if(menu.id === "feature-btn"){
+    if(menu.id === "mobile-feature-btn"){
         featureMenuToggle = !featureMenuToggle;
         const featureMenu = document.getElementById("mobile-feature-menu");
         const arrow = menu.firstElementChild.firstElementChild;
@@ -57,7 +57,7 @@ function mobileMenuExpand(menu){
         featureMenuToggle ? (featureMenu.style.display = "grid", arrow.src = "./images/icon-arrow-up.svg") 
             : (featureMenu.style.display = "none", arrow.src = "./images/icon-arrow-down.svg");
     }
-    else if(menu.id === "company-btn"){
+    else if(menu.id === "mobile-company-btn"){
         companyMenuToggle = !companyMenuToggle;
         const companyMenu = document.getElementById("mobile-company-menu");
         const arrow = menu.firstElementChild.firstElementChild;
